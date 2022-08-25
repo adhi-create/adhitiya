@@ -35,8 +35,11 @@ const Blog = () => {
               ))}
             </div>
           </header>
-          <img src={blog.cover} alt='cover' />
+          <iframe src={blog.videoUrl} width="380" height="315" allow="autoplay"></iframe>
           <p className='blog-desc'>{blog.description}</p>
+          <a href={blog.cover}className='btn btn primary' download > download</a>
+          
+
         </div>
       ) : (
         <EmptyList />
